@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover">
+
+
+    <!-- font -->
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="fonts/font-icons.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet"type="text/css" href="css/styles.css"/>
+
+   
+    <!-- Favicon and Touch Icons  -->
+    <link rel="shortcut icon" href="images/logo/48.png" />
+    <link rel="apple-touch-icon-precomposed" href="images/logo/48.png" />
+
+    <title>camera</title>
+</head>
+
+<body>
+
+  
+    <div class="bg-camera">
+        <div class="tf-container">
+            <div class="pt-30 pb-30">
+                <div class="line-qr">
+                    <img src="images/banner/line-qr.png" alt="img">
+                </div>
+                <div class="box-noti-camera">
+                    <span class="icon-think icon"></span>
+                    <p class="text-large text-surface">Point your camera at your Citizenship ID to complete.</p>
+                </div>
+            </div>
+           
+                
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            window.setTimeout(function(){
+                location.href = "camera-done.html";
+            },2000) 
+        });
+    </script>
+    
+</body>
+</html>
