@@ -20,7 +20,7 @@ body {
     background-image: linear-gradient(
         to bottom,
         #205AFF 0%,
-        rgba(35, 84, 230, 0) 248px,
+        rgba(35, 84, 230, 0) 348px,
         #f2f5fe 100%
       );
       background-color: rgba(242, 245, 254, 0.7);
@@ -90,10 +90,14 @@ body {
     font-size: 24px;
 }
 
+.text-28 {
+    font-size: 28px;
+}
+
 .text-32 {
     font-size: 32px;
 }
-
+ 
 /* line height */
 .line-height-10 {
     line-height: 14px;
@@ -161,9 +165,18 @@ body {
     color: #7e8088;
 }
 
+.text-grey {
+    color: #afbce2;
+}
+
 .text-highlight {
     color: #205AFF;
 }
+/* text align */
+.text-right {
+    text-align: right;
+}
+
 
 /* shadow */
 .shadow-main {
@@ -186,6 +199,12 @@ body {
 /* image */
 .header-logo {
     height: 30px;
+}
+
+.image-sm{
+    width: 18px;
+    height: 18px;
+    object-fit: cover;
 }
 
 .image-md{
@@ -274,12 +293,25 @@ body {
     gap: 36px;
 }
 
+.gap-32 {
+    gap: 32px;
+}
+
 .gap-48 {
     gap: 48px;
 }
 
 .gap-56{
     gap: 56px;
+}
+
+/* border */
+.border-b {
+    border-bottom: 2px solid #6c7e91;
+}
+
+.border-b.active {
+    border-color: #205AFF;
 }
 
 /* another */
@@ -331,6 +363,13 @@ body {
 }
 
 
+/* WALLET PAGE */
+.header-wallet {
+    background-size: 250px 130px;
+    background-repeat: no-repeat;
+    background-position: top right;
+    margin-top: 10px;
+}
 
 
 
