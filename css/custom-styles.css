@@ -147,11 +147,11 @@ body {
 }
 
 .font-semibold {
-  font-weight: 600;
+  font-weight: 600 !important;
 }
 
 .font-bold {
-  font-weight: 700;
+  font-weight: 700 !important;
 }
 
 .font-extrabold {
@@ -160,7 +160,7 @@ body {
 
 /* text color */
 .text-black {
-  color: #000000;
+  color: #000000 !important;
 }
 
 .text-secondary {
@@ -191,6 +191,10 @@ body {
 
 .rounded-md {
   border-radius: 8px;
+}
+
+.rounded-lg {
+  border-radius: 12px;
 }
 
 .rounded-b-md {
@@ -310,6 +314,14 @@ body {
   border-bottom: 2px solid #6c7e91;
 }
 
+.border-r-1 {
+  border-right: 1px solid #e6e6e6;
+}
+
+.border-main {
+  border: 1px solid #e6e6e6;
+}
+
 .border-b.active {
   border-color: #205aff;
 }
@@ -379,6 +391,14 @@ body {
 /* WALLET PAGE */
 .header-wallet {
   background-size: 250px 130px;
+  background-repeat: no-repeat;
+  background-position: top right;
+  margin-top: 10px;
+}
+
+/* CONVERT PAGE */
+.header-convert {
+  background-size: 200px 100px;
   background-repeat: no-repeat;
   background-position: top right;
   margin-top: 10px;
