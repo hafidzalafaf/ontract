@@ -48,8 +48,8 @@ body {
 .tf-container {
   max-width: 400px;
   width: 100%;
-  padding-right: 0;
-  padding-left: 0;
+  padding-right: 12px;
+  padding-left: 12px;
 }
 
 /* padding */
@@ -61,15 +61,15 @@ body {
 
 /* text size */
 .text-10 {
-  font-size: 10px;
+  font-size: 10px !important;
 }
 
 .text-12 {
-  font-size: 12px;
+  font-size: 12px !important;
 }
 
 .text-14 {
-  font-size: 14px;
+  font-size: 14px !important;
 }
 
 .text-16 {
@@ -424,8 +424,39 @@ body {
   gap: 24px;
   max-height: 200px;
   overflow-y: auto;
+  transform: translateY(-70%);
+  transition: 0.3 ease-in-out all;
 }
 
 .token-dropdown.show {
   display: flex;
+  transition: 0.3s ease-in-out;
+  transform: translateY(0);
+}
+
+/* WITHDRAW */
+
+.token-dropdown {
+  z-index: 99;
+  top: 72px;
+  position: absolute;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  padding: 12px;
+  display: none;
+  width: 100%;
+  flex-direction: column;
+  gap: 24px;
+  max-height: 200px;
+  overflow-y: auto;
+  transform: translateY(-70%);
+  transition: 0.3 ease-in-out all;
+}
+
+.token-dropdown.show {
+  display: flex;
+  transition: 0.3s ease-in-out;
+  transform: translateY(0);
 }
