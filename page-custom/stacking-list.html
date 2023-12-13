@@ -53,12 +53,12 @@
                 <div class="bg-white p-2 rounded-full"><img src="../images/logo/logo-only.png" class="image-sm" alt="logo"></div>
                 <p class="text-white font-bold text-14">Stacking Level : <span class="text-white font-bold text-18">2</span></p>
             </div>
-            <button class="text-white text-12 px-4 py-2 rounded-md bg-gradient border-0 w-30">Claim</button>
+            <button class="text-white text-12 px-4 py-2 rounded-lg bg-gradient border-0 w-30">Claim</button>
         </div>
 
-        <div class="bg-white rounded-md px-3 py-3 mb-20 d-flex align-items-center gap-3">
+        <div class="bg-white rounded-lg px-3 py-3 mb-20 d-flex align-items-center gap-3">
             <div class="flex-1">
-                <p class="text-12 mb-35 font-medium text-secondary d-flex align-items-center justify-content-between gap-10"><span class="d-flex align-items-center gap-2"><i class="icon-wallet text-16 font-bold text-secondary"></i> Usdt balance </span> <span class="text-16 text-highlight font-bold">0.00</span></p>
+                <p class="text-12 mb-16 font-medium text-secondary d-flex align-items-center justify-content-between gap-10"><span class="d-flex align-items-center gap-2"><i class="icon-wallet text-16 font-bold text-secondary"></i> Usdt balance </span> <span class="text-16 text-highlight font-bold">0.00</span></p>
                 <p class="text-12 font-medium text-secondary d-flex align-items-center justify-content-between gap-10"><span class="d-flex align-items-center gap-2"><i class="icon-wallet text-16 font-bold text-secondary"></i> Token balance </span><span class="text-16 text-highlight font-bold">0.00</span></p>
             </div>
             <div class="d-flex justify-content-center align-items-center flex-1">
@@ -72,38 +72,201 @@
 
         <div class="d-flex justify-content-between mb-12 flex-row flex-wrap gap-10">
             <a href="./stacking-list.html"
-                class="d-flex flex-1 flex-row gap-6 bg-white justify-content-start py-3 px-3 align-items-center rounded-md border-highlight"
+                class="d-flex flex-1 flex-row gap-6 bg-white justify-content-start py-3 px-3 align-items-center rounded-lg border-highlight"
             >
                 <i class="fa-solid fa-list text-highlight text-14"></i>
-                <p class="text-highlight text-12 font-bold">Stake List</p>
+                <p class="text-highlight text-14 font-bold">Stake List</p>
             </a>
             <a href="./stacking-active.html"
-                class="d-flex flex-1 flex-row gap-6  justify-content-start py-3 px-3 align-items-center bg-white rounded-md "
+                class="d-flex flex-1 flex-row gap-6  justify-content-start py-3 px-3 align-items-center bg-white rounded-lg "
             >
-            <i class="fa-solid fa-circle-check text-disable text-14"></i>
-                <p class="text-disable text-12 font-bold">Stake Active</p>
+            <i class="fa-solid fa-circle-check text-blue-dark text-14"></i>
+                <p class="text-blue-dark text-14 font-bold">Stake Active</p>
             </a>
         </div>
-        <div class="d-flex justify-content-between mb-12 flex-row flex-wrap gap-10">
+        <div class="d-flex justify-content-between flex-row flex-wrap gap-10">
             <a href="./stacking-expired.html"
-                class="d-flex flex-1 flex-row gap-6  justify-content-start py-3 px-3 align-items-center bg-white rounded-md "
+                class="d-flex flex-1 flex-row gap-6  justify-content-start py-3 px-3 align-items-center bg-white rounded-lg "
             >
-            <i class="fa-solid fa-clock text-disable text-14"></i>
-                <p class="text-disable text-12 font-bold">Stake Expired</p>
+            <i class="fa-solid fa-clock text-blue-dark text-14"></i>
+                <p class="text-blue-dark text-14 font-bold">Stake Expired</p>
             </a>
             <a href="./stacking-reward.html"
-                class="d-flex flex-1 flex-row gap-6  justify-content-start py-3 px-3 align-items-center bg-white rounded-md "
+                class="d-flex flex-1 flex-row gap-6  justify-content-start py-3 px-3 align-items-center bg-white rounded-lg "
             >
-                <i class="fa-solid fa-award icon text-disable text-14"></i>
-                <p class="text-disable text-12 font-bold">Stake Reward</p>
+                <i class="fa-solid fa-award icon text-blue-dark text-14"></i>
+                <p class="text-blue-dark text-14 font-bold">Stake Reward</p>
             </a>
         </div>
       </section>
 
-      <section class="bg-transparant tf-container">
-        <div class="bg-white px-4 py-3 rounded-md">
+      <section class="bg-transparant tf-container mb-18">
+
+        <h3 class="text-16 font-bold text-blue-dark mb-2">Stake List</h3>
+        <div class="d-flex flex-column gap-16">
+
+          <div class="bg-white px-3 py-3 rounded-lg">
+            <div class="">
+              <p class="text-blue-dark text-14 font-bold mb-12">Contract</p>
+
+              <!-- JIKA INGIN DIBUAT TIDAK DROPDOWN -->
+              <div class="d-flex justify-content-md-between align-items-center border-main px-3 py-3 rounded-lg flex">
+                <div class="d-flex gap-16 align-items-center flex-1">
+                  <p class="text-14 text-highlight mb-0 font-bold text-uppercase">Stake 1</p>
+                </div>
+              </div>
+
+              <!-- JIKA INGIN DIBUAT DROPDOWN -->
+              <!-- <div class="position-relative">
+                <div id="stake" class="d-flex cursor-pointer justify-content-md-between align-items-center border-main px-3 py-3 rounded-lg flex">
+                  <div class="d-flex gap-16 align-items-center flex-1">
+                    <p class="text-14 text-highlight mb-0 font-bold text-uppercase">Stake 1</p>
+                  </div>
+                  <i class="fa-solid fa-chevron-down text-grey text-18"></i>
+                </div>
+                <div id="stake-dorpdown" class="stacking-dropdown">
+                    <div class="token-item d-flex gap-16 align-items-center cursor-pointer">
+                      <p class="text-14 text-dark mb-0 font-bold text-uppercase">Stake 1</p>
+                    </div>
+                    <div class="token-item d-flex gap-16 align-items-center cursor-pointer">
+                      <p class="text-14 text-dark mb-0 font-bold text-uppercase">Stake 1</p>
+                    </div>
+                </div>
+              </div> -->
+            </div>
+            <div class="d-flex gap-12 flex-column mt-16">
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="text-secondary font-normal text-14">Level Required</p>
+                <p class="text-blue-dark font-bold text-14">Level 1</p>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="text-secondary font-normal text-14">Contract Period</p>
+                <p class="text-blue-dark font-bold text-14">1 Day</p>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="text-secondary font-normal text-14">Apr</p>
+                <p class="text-blue-dark font-bold text-14">1% / Hour</p>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="text-secondary font-normal text-14">Gass Required</p>
+                <p class="text-blue-dark font-bold text-14">2 OTC</p>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="text-secondary font-normal text-14">Gass For Reward</p>
+                <p class="text-blue-dark font-bold text-14">1 OTC / Hour</p>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="text-secondary font-normal text-14">Minimum Stake</p>
+                <p class="text-blue-dark font-bold text-14">$10</p>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="text-secondary font-normal text-14">Minimum Stake</p>
+                <p class="text-blue-dark font-bold text-14">$10</p>
+              </div>
+            </div>
+            <div class="">
+              <div class="d-flex align-items-center gap-10 justify-content-between">
+                <p class="text-blue-dark text-14 font-bold mb-12 mt-18">Amount</p>
+                <div class="d-flex align-items-center">
+                  <img src="../images/coin/usdt.png" class="image-xs" alt="image small logo">
+                  <P class="text-uppercase text-12 ms-1 font-semibold text-highlight">usdt <span class="text-grey text-capitalize font-bold ms-2">Balance : 0.00</span></P>
+                </div>
+              </div>
+              <div class="d-flex justify-content-md-between align-items-center border-main px-3 py-1 rounded-lg flex">
+                <input type="number" placeholder="0" class="bg-white text-14 text-black font-medium rounded-lg py-1 px-0">
+              </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+              <p class="text-blue-dark text-14 font-bold mb-12 mt-18">Total Amount</p>
+              <p class="text-highlight font-bold text-14">0.00</p>
+            </div>
+            <div class="mt-0">
+              <button class="btn btn-primary rounded-lg py-2">Stake Now</button>
+            </div>  
+          </div>
+
+          <div class="bg-white px-3 py-3 rounded-lg">
+            <div class="">
+              <p class="text-blue-dark text-14 font-bold mb-12">Contract</p>
+
+              <!-- JIKA INGIN DIBUAT TIDAK DROPDOWN -->
+              <div class="d-flex justify-content-md-between align-items-center border-main px-3 py-3 rounded-lg flex">
+                <div class="d-flex gap-16 align-items-center flex-1">
+                  <p class="text-14 text-highlight mb-0 font-bold text-uppercase">Stake 1</p>
+                </div>
+              </div>
+
+              <!-- JIKA INGIN DIBUAT DROPDOWN -->
+              <!-- <div class="position-relative">
+                <div id="stake" class="d-flex cursor-pointer justify-content-md-between align-items-center border-main px-3 py-3 rounded-lg flex">
+                  <div class="d-flex gap-16 align-items-center flex-1">
+                    <p class="text-14 text-highlight mb-0 font-bold text-uppercase">Stake 1</p>
+                  </div>
+                  <i class="fa-solid fa-chevron-down text-grey text-18"></i>
+                </div>
+                <div id="stake-dorpdown" class="stacking-dropdown">
+                    <div class="token-item d-flex gap-16 align-items-center cursor-pointer">
+                      <p class="text-14 text-dark mb-0 font-bold text-uppercase">Stake 1</p>
+                    </div>
+                    <div class="token-item d-flex gap-16 align-items-center cursor-pointer">
+                      <p class="text-14 text-dark mb-0 font-bold text-uppercase">Stake 1</p>
+                    </div>
+                </div>
+              </div> -->
+            </div>
+            <div class="d-flex gap-12 flex-column mt-16">
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="text-secondary font-normal text-14">Level Required</p>
+                <p class="text-blue-dark font-bold text-14">Level 1</p>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="text-secondary font-normal text-14">Contract Period</p>
+                <p class="text-blue-dark font-bold text-14">1 Day</p>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="text-secondary font-normal text-14">Apr</p>
+                <p class="text-blue-dark font-bold text-14">1% / Hour</p>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="text-secondary font-normal text-14">Gass Required</p>
+                <p class="text-blue-dark font-bold text-14">2 OTC</p>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="text-secondary font-normal text-14">Gass For Reward</p>
+                <p class="text-blue-dark font-bold text-14">1 OTC / Hour</p>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="text-secondary font-normal text-14">Minimum Stake</p>
+                <p class="text-blue-dark font-bold text-14">$10</p>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="text-secondary font-normal text-14">Minimum Stake</p>
+                <p class="text-blue-dark font-bold text-14">$10</p>
+              </div>
+            </div>
+            <div class="">
+              <div class="d-flex align-items-center gap-10 justify-content-between">
+                <p class="text-blue-dark text-14 font-bold mb-12 mt-18">Amount</p>
+                <div class="d-flex align-items-center">
+                  <img src="../images/coin/usdt.png" class="image-xs" alt="image small logo">
+                  <P class="text-uppercase text-12 ms-1 font-semibold text-highlight">usdt <span class="text-grey text-capitalize font-bold ms-2">Balance : 0.00</span></P>
+                </div>
+              </div>
+              <div class="d-flex justify-content-md-between align-items-center border-main px-3 py-1 rounded-lg flex">
+                <input type="number" placeholder="0" class="bg-white text-14 text-black font-medium rounded-lg py-1 px-0">
+              </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+              <p class="text-blue-dark text-14 font-bold mb-12 mt-18">Total Amount</p>
+              <p class="text-highlight font-bold text-14">0.00</p>
+            </div>
+            <div class="mt-0">
+              <button class="btn btn-primary rounded-lg py-2">Stake Now</button>
+            </div>  
+          </div>
           
         </div>
+
       </section>
 
       
@@ -158,5 +321,16 @@
       crossorigin="anonymous"
     ></script>
     <script type="text/javascript" src="../js/main.js"></script>
+    <script>
+
+      // DROPDOWN TOKEN
+      $("#stake").click(function () {
+          $("#stake-dorpdown").toggleClass("show");
+      });
+
+      $(".stake").click(function () {
+          $("#stake-dorpdown").removeClass("show");
+      });
+    </script>
   </body>
 </html>
